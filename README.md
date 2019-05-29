@@ -1,63 +1,63 @@
-**No Longer Maintained**
+**Больше не поддерживается**
+**Это только перевод, оригинальная Landing CMS находится [здесь](https://github.com/Elias-Black/Landing-CMS "здесь")**
 
 # Landing CMS
-A simple CMS for Landing Pages.
+Простая CMS для Landing Pages.
 
-**v0.0.6** Be careful! While that is an alpha version.
+**v0.0.6** Осторожно! Пока это альфа-версия.
 
-### Hello guys!
-I wrote this CMS for myself and want to share it for everyone.
-Landing CMS is a simple tool for management landing pages. It doesn't use any databases. All data stores in a plain text files. You need only web-server with PHP 5.2 or newer (7 and 7.3 supports)!
+### Привет, чуваки!
+Я написал эту CMS для себя и хочу поделиться ею со всеми.
+Landing CMS - это простой инструмент для управления страницами. Он не использует никаких баз данных. Все данные хранятся в текстовых файлах. Вам нужен только веб-сервер с PHP 5.2 или новее (поддержка 7 и 7.3)!!
 
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QGKZW29YXRDCL)
 
+---
+
+### Установка
+Для использования CMS необходимо скопировать все файлы из этого репозитория в корневую директорию вашего сайта. Далее вам нужны права на конфигурирование.
+
+Для проверки конфигураций можно воспользоваться помощником: открыть`https://your_site.com/install.php`
+![Помощник по установке](https://github.com/Elias-Black/Landing-CMS/blob/gh-pages/screenshots/installation.png"Помощник по установке")
+
+Вы должны установить 777 разрешение для загрузки и для папок БД:
+- assets/\_cms/uploads/tinymce/source/
+- assets/\_cms/uploads/tinymce/thumbs/
+- cms/\_db/
+
+Если помощник показал, что все сделано, перейдите на панель Admin: `https://your_site.com/cms/`
+
+Теперь вам нужно создать свой пароль.
+![Создание пароля](https://github.com/Elias-Black/Landing-CMS/blob/gh-pages/screenshots/creating-password.png "Создание пароля")
+
+**Все готово!**Вы можете создать свое первое поле и использовать его в своем коде..
+![Добро пожаловать в Landing CMS](https://github.com/Elias-Black/Landing-CMS/blob/gh-pages/screenshots/clean-cms.png "Добро пожаловать в Landing CMS")
+
 ***
 
-### Installation
-For using the CMS you should copy all files from this repository to root directory of your site. Now you need config permissions.
+### Как пользоваться
+На панели Администрирования можно создавать поля с 7 различными форматами:
+- Строка (String)
+- Многострочный текст (Multiple line text)
+- Поле WYSIWYG (WYSIWYG Field)
+- Чекбокс (Checkbox)
+- Цветовая палитра (Color Picker)
+- Загрузчик файлов (File Uploader)
+- Группа полей (Group of Fields)
 
-For checking configs you can use helper: open `https://your_site.com/install.php`
-![Installation helper](https://github.com/Elias-Black/Landing-CMS/blob/gh-pages/screenshots/installation.png "Installation helper")
+При создании поля вам необходимо ввести Псевдоним.
+![Добавление нового Поля](https://github.com/Elias-Black/Landing-CMS/blob/gh-pages/screenshots/adding-field.png "Добавление нового Поля")
 
-You should set 777 permissions for upload and DB directories:
-- assets/_cms/uploads/tinymce/source/
-- assets/_cms/uploads/tinymce/thumbs/
-- cms/_db/
+Заполненная панель администратора будет выглядеть следующим образом
+![Заполненная CMS](https://github.com/Elias-Black/Landing-CMS/blob/gh-pages/screenshots/filled-cms.png "Заполненная CMS")
 
-If helper show that all is done you should going to Admin panel: `https://your_site.com/cms/`
+Затем, когда вы захотите использовать ваши поля в своих файлах, вам нужно подключить контроллер к вашему файлу..
 
-Now you need to create your password.
-![Creating password](https://github.com/Elias-Black/Landing-CMS/blob/gh-pages/screenshots/creating-password.png "Creating password")
-
-**All is done!** You can create your first Field and use it in your code.
-![Welcome to Landing CMS](https://github.com/Elias-Black/Landing-CMS/blob/gh-pages/screenshots/clean-cms.png "Welcome to Landing CMS")
-
-***
-
-### How to use
-In the Admin panel you can create Fields with 7 formats:
-- String
-- Multiple line text
-- WYSIWYG Field
-- Checkbox
-- Color Picker
-- File Uploader
-- Group of Fields
-
-When you creating a Field you need to enter an Alias.
-![Adding a new Field](https://github.com/Elias-Black/Landing-CMS/blob/gh-pages/screenshots/adding-field.png "Adding a new Field")
-
-Filled Admin panel will look something like this:
-![Filled CMS](https://github.com/Elias-Black/Landing-CMS/blob/gh-pages/screenshots/filled-cms.png "Filled CMS")
-
-
-Then, when you want to use your Fields in your files you need to connect Controller to your file.
-
-**Example:**
+**Пример:**
 ```php
 <?php
 
-// Connecting the public controller
+// Соединение с публичным контроллером
 require_once('assets/controller.php');
 
 ?>
@@ -65,48 +65,52 @@ require_once('assets/controller.php');
 <html>
   ...
 ```
-### Text
-You can to call your Fields by Alias.
+### Текст
+Вы можете вызывать свои Поля (Fields) с помощью Алиасов (Alias).
 
-**Example:**
+**Пример:**
+
 ```php
 <html>
   <head>
     <title><?=$get['title'];?></title>
     ...
 ```
-![Demo page](https://github.com/Elias-Black/Landing-CMS/blob/gh-pages/screenshots/demo-page.png "Demo page")
-### Checkbox
-If you want to use checkboxes you need to check the values of equality 'on'.
 
-**Example:**
+![Демонстрационная страница](https://github.com/Elias-Black/Landing-CMS/blob/gh-pages/screenshots/demo-page.png "Демонстрационная страница")
+### Checkbox
+Если Вы хотите использовать чекбокс, необходимо изменить его значение на 'on'.
+
+**Пример:**
 ```php
 <body>
 
 ...
 
   <?php if($get['maintenance_mode'] == 'on'): ?>
-    <h1>Try again later</h1>
+    <h1>Попробуйте еще раз позднее</h1>
   <?php else: ?>
-    <h1>Hello, World!</h1>
+    <h1>Привет, Мир!</h1>
   <?php endif; ?>
 
 ...
 
 </body>
 ```
-### Groups
-If you created a Group, you can call its specific element.
 
-**Example:**
+### Группы
+Если Вы создали группу, то можете вызвать из неё необходимые элементы.
+
+**Пример:**
 ```php
 <p>
    <?=$get['main_group']['item1'];?>
 </p>
 ```
-You can also iterate through each of the Group's elmenets. (Subgroup or Field).
 
-**Example:**
+Вы так же можете перебирать все элементы групп. (Подгрупп и Полей).
+
+**Пример:**
 ```php
 <?php foreach($get['main_group'] as $name => $item): ?>
    <ul>
@@ -114,17 +118,18 @@ You can also iterate through each of the Group's elmenets. (Subgroup or Field).
    </ul>
 <?php endforeach; ?>
 ```
-### Modules
-If you need use any modules you can creat these in `modules` directory. For using your Fields in your modules you should connect DB before connected this modules.
 
-**Example:**
+### Модули
+Если Вам необходимо использовать модули, Вы можете создать их в папке `modules`. Для использования собственных Полей (Fields) в своих модулях следует подключить базу данных до подключения этих модулей.
+
+**Пример:**
 ```php
 <?php
 
-// Connecting the public controller
+// Соединение с публичным контроллером
 require_once('assets/controller.php');
 
-// Connecting a module
+// Подключение модуля
 require_once('modules/rand_num.php');
 
 ?>
@@ -134,32 +139,35 @@ require_once('modules/rand_num.php');
 
   ...
 
-  <b>Random number module:</b> <?=$rand_num;?>
+  <b>Модуль случайных чисел:</b> <?=$rand_num;?>
 
   ...
 ```
-That so... In my opinion this functionality enough for all landing pages. If you
- don't think so you can fork my project or suggest me some features ;)
+
+Так что... На мой взгляд, этой функциональности достаточно для всех страниц.
+Если вы так не думаете, вы можете развить мой проект или предложить мне некоторые функции);
 ***
 
-### Hotkeys
-To speed up work with the CMS, you can use the following hotkeys:
-- `special-key` + `s` - save;
-- `special-key` + `n` - new Field;
-- `special-key` + `z` - cancel;
+### Сочетания клавиш
+Для ускорения работы с CMS можно использовать следующие горячие клавиши:
+-`special-key` + `s` - сохранить;
+- `special-key` + `n` - новое Поле (Field);
+- `special-key` + `z` - отмена;
 
-You can find out the special keys for your browser [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/accesskey "accesskey - HTML: HyperText Markup Language | MDN").
+Вы можете найти специальные клавиши для вашего браузера. [здесь](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/accesskey "accesskey - HTML: HyperText Markup Language | MDN").
 
-### Languages
-You can translate the CMS to any languages. How to do this:
-- Go to `cms/_lang`;
-- Create a directory with language name like `en`;
-- Into the new directory create the `main.php` file;
-- Fill the `main.php` file by analogy with `cms/_lang/en/main.php`;
-- Update the `cms/_classes/utils.class.php` file's constant `LANGUAGE` with the name of the language directory;
+### Языки
+Вы можете перевести CMS на любые языки. Как это сделать:
+- Перейти в `cms/_lang`;
+- Создайте папку с именем языка, например `en`;
+- В новой папке создайте `main.php` файл;
+- Заполните `main.php` файл по аналогии с `cms/_lang/en/main.php`;
+- Обновите константу `LANGUAGE` в файле `cms/_classes/utils.class.php` с именем языкового каталога;
 
 ### To do
+
 v 0.0.7:
+
 - Fix Color Picker and File Uploader for IE9;
 - Add Security Key to Responsive File Manager;
 - Add JS-less accessebility for File Uploader;
@@ -167,16 +175,18 @@ v 0.0.7:
 - Add supporting RGB/RGBA/HEX to Color Picker;
 
 v 1.0:
+
 - Add Admin icon to frontend;
 - Add Plugins support
 - Add Drag'n'Drop for Groups and Fields sorting;
 
 v 2.0
+
 - Add Pages;
 
 ***
 
-### Thanks
+### Благодарности
 - [TinyMCE](https://github.com/tinymce/tinymce "TinyMCE project on GitHub.") for the WYSIWYG editor;
 - [Responsive File Manager](http://www.responsivefilemanager.com/ "Responsive File Manager site.") for TinyMCE external filemanager;
 - [Tovic / color-picker](https://github.com/tovic/color-picker "A simple color picker plugin written in pure JavaScript, for modern browsers.") for the Color Picker;
