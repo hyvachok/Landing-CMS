@@ -11,14 +11,14 @@
  class="magic-checkbox"
  name="<?=$vars['name'];?>"
  type="checkbox"
- title="Select a value for the &laquo;<?=$vars['title'];?>&raquo; Field."
+ title="Выберите значения для Поля &laquo;<?=$vars['title'];?>&raquo;."
  onchange="confirmLeave('on');"
  <?=($vars['output'] == 'on') ? 'checked' : '';?>
  />
 
 <label
  for="<?=$vars['name'];?>"
- title="Select a value for &laquo;<?=$vars['title'];?>&raquo; Field."
+ title="Выберите значения для Поля &laquo;<?=$vars['title'];?>&raquo;."
 >
 	<?=$vars['title'];?><?=$vars['required_str'];?>
 </label>

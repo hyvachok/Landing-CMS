@@ -38,10 +38,10 @@
 				<button
 				 class="collapsed navbar-toggle js_sitemenu_toggle"
 				 type="button"
-				 title="Open site menu."
-				 data-open-title="Open site menu."
-				 data-close-title="Close site menu.">
-					<span class="sr-only">Toggle navigation</span>
+				 title="Открыть меню сайта."
+				 data-open-title="Открыть меню сайта."
+				 data-close-title="Закрыть меню сайта.">
+					<span class="sr-only">Показать кнопки навигации</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -49,7 +49,7 @@
 				<a
 				 href="<?=Utils::getLink('cms/');?>"
 				 class="navbar-brand"
-				 title="Go to the main CMS page.">
+				 title="Открыть главную страницу CMS.">
 					Landing CMS
 				</a>
 			</div>
@@ -57,23 +57,23 @@
 				<ul class="right nav navbar-nav">
 				<?php if( defined('IS_LOGIN') ): ?>
 					<li>
-						<a href="<?=Utils::getLink('cms/');?>" title="Go to content editing.">Edit Content</a>
+						<a href="<?=Utils::getLink('cms/');?>" title="Открыть редактирование содержимого.">Редактировать содержимое</a>
 					</li>
 					<li>
-						<a href="<?=Utils::getLink('cms/add-field/');?>" title="Go to adding a Field.">Add Field</a>
+						<a href="<?=Utils::getLink('cms/add-field/');?>" title="Открыть добавление Полей.">Добавить поле</a>
 					</li>
 					<li>
-						<a href="<?=Utils::getLink('cms/password/');?>" title="Go to password editing.">Edit Password</a>
+						<a href="<?=Utils::getLink('cms/password/');?>" title="Открыть редактирование пароля.">Редактировать пароль</a>
 					</li>
 					<li>
-						<a href="<?=Utils::getLink('cms/login/?logout=true');?>" title="Exit from the CMS.">Log Out</a>
+						<a href="<?=Utils::getLink('cms/login/?logout=true');?>" title="Выйти из CMS.">Выйти</a>
 					</li>
 				<?php endif; ?>
 					<li>
-						<a href="<?=Utils::getLink();?>" target="_blank" title="Go to the Landing Page.">Website</a>
+						<a href="<?=Utils::getLink();?>" target="_blank" title="Открыть сайт.">На сайт</a>
 					</li>
 					<li>
-						<a href="https://github.com/Elias-Black/Landing-CMS" target="_blank" title="Go to the site about Landing CMS.">About CMS</a>
+						<a href="https://github.com/Elias-Black/Landing-CMS" target="_blank" title="Открыть сайт с информацией о Landing CMS.">О CMS</a>
 					</li>
 					<li>
 						<form
@@ -131,7 +131,7 @@
 	<div class="navbar navbar-default navbar-fixed-bottom">
 		<div class="container">
 			<div class="col-sm-12 text-center navbar-text">
-				2017 &copy; <a href="https://github.com/Elias-Black/Landing-CMS" target="_blank" title="Go to the site about Landing CMS." class="unstyle-link">Landing CMS <small>v0.0.6</small></a>
+				2017 &copy; <a href="https://github.com/Elias-Black/Landing-CMS" target="_blank" title="Открыть сайт с информацией о Landing CMS." class="unstyle-link">Landing CMS <small>v0.0.6</small></a>
 			</div>
 		</div>
 	</div>

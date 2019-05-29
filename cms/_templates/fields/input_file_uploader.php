@@ -12,8 +12,8 @@
 	 name="<?=$vars['name'];?>"
 	 type="text"
 	 value="<?=$vars['output'];?>"
-	 title="Enter a path to a file for &laquo;<?=$vars['title'];?>&raquo; Field here."
-	 placeholder="Enter a path to a file here"
+	 title="Введите путь до файла для Поля &laquo;<?=$vars['title'];?>&raquo; сюда."
+	 placeholder="Введите путь до файла сюда"
 	 data-iframe-id="js_<?=$vars['name'];?>_iframe"
 	 onchange="confirmLeave('on');" />
 	<span
@@ -21,8 +21,8 @@
 	 class="input-group-addon"
 	 role="button"
 	 tabindex="0"
-	 title="Click or Tap here to open the file-uploader."
-	 data-iframe-id="js_<?=$vars['name'];?>_iframe">Choose a file</span>
+	 title="Нажмите сюда, чтобы открыть загрузчик файлов."
+	 data-iframe-id="js_<?=$vars['name'];?>_iframe">Выбрать файл</span>
 </div>
 
 <div class="hidden">
@@ -31,14 +31,14 @@
 	 class="close-iframe"
 	 role="button"
 	 tabindex="0"
-	 title="Click or Tap here to close the file-uploader."
-	 data-iframe-id="js_<?=$vars['name'];?>_iframe">Close</span>
+	 title="Нажмите сюда, чтобы закрыть загрузчик файлов."
+	 data-iframe-id="js_<?=$vars['name'];?>_iframe">Закрыть</span>
 	<iframe
 	 id="js_<?=$vars['name'];?>_iframe"
 	 width="100%"
 	 height="550"
 	 frameborder="0"
-	 data-src="<?=Utils::getLink('assets/vendor/responsive_filemanager_9.12.1/filemanager/dialog.php?type=2&field_id='.$vars['name'].'&relative_url=1&lang=en_EN');?>">
+	 data-src="<?=Utils::getLink('assets/vendor/responsive_filemanager_9.12.1/filemanager/dialog.php?type=2&field_id='.$vars['name'].'&relative_url=1&lang=ru_RU');?>">
 	</iframe>
 </div>
 

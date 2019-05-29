@@ -18,31 +18,31 @@
 						<a
 						 class="group-controll js_move_field_up"
 						 href="?moveFieldUp=<?=$field['name'];?>"
-						 title="Move &laquo;<?=$field['title'];?>&raquo; Group Up.">
+						 title="Переместить &laquo;<?=$field['title'];?>&raquo; наверх.">
 							<img src="<?=Utils::getLink('assets/_cms/img/icon-up-white.png');?>" alt="Up">
 						</a>
 						<a
 						 class="group-controll js_move_field_down"
 						 href="?moveFieldDown=<?=$field['name'];?>"
-						 title="Move &laquo;<?=$field['title'];?>&raquo; Group Down.">
+						 title="Переместить &laquo;<?=$field['title'];?>&raquo; вниз.">
 							<img src="<?=Utils::getLink('assets/_cms/img/icon-down-white.png');?>" alt="Down">
 						</a>
 						<a
 						 class="group-controll"
 						 href="<?=Utils::getLink('cms/edit-field/?name='.$field['name']);?>"
-						 title="Edit &laquo;<?=$field['title'];?>&raquo; Group.">
+						 title="Редактировать Группу &laquo;<?=$field['title'];?>&raquo;.">
 							<img src="<?=Utils::getLink('assets/_cms/img/icon-edit-white.png');?>" alt="Edit">
 						</a>
 						<a
 						 class="group-controll"
 						 href="<?=Utils::getLink('cms/copy-field/?name='.$field['name']);?>"
-						 title="Copy &laquo;<?=$field['title'];?>&raquo; Group.">
+						 title="Копировать Группу &laquo;<?=$field['title'];?>&raquo;.">
 							<img src="<?=Utils::getLink('assets/_cms/img/icon-copy-white.png');?>" alt="Copy">
 						</a>
 						<a
 						 class="group-controll js_group_toggle"
 						 href="?<?=Utils::pr($field['open'])?'closeGroup':'openGroup';?>=<?=$field['name'];?>"
-						 title="Open/Close &laquo;<?=$field['title'];?>&raquo; Group.">
+						 title="Открыть/Закрыть Группу &laquo;<?=$field['title'];?>&raquo;.">
 							<?php $src = Utils::pr($field['open']) ? Utils::getLink('assets/_cms/img/icon-collapse.png') : Utils::getLink('assets/_cms/img/icon-increase.png');?>
 							<img
 							 data-opened="<?=Utils::getLink('assets/_cms/img/icon-collapse.png');?>"
@@ -53,7 +53,7 @@
 						<a
 						 class="group-controll danger js_delete_field"
 						 href="?delete=<?=$field['name'];?>"
-						 title="Delete &laquo;<?=$field['title'];?>&raquo; Group."
+						 title="Удалить Группу &laquo;<?=$field['title'];?>&raquo;."
 						 data-confirm-title="Do you want to delete &laquo;<?=$field['title'];?>&raquo; Group?">
 							<img src="<?=Utils::getLink('assets/_cms/img/icon-delete-white.png');?>" alt="Delete">
 						</a>
@@ -85,31 +85,31 @@
 				<a
 				 class="field-controll js_move_field_up"
 				 href="?moveFieldUp=<?=$field['name'];?>"
-				 title="Move &laquo;<?=$field['title'];?>&raquo; Field Up.">
+				 title="Переместить Поле &laquo;<?=$field['title'];?>&raquo; наверх.">
 					<img src="<?=Utils::getLink('assets/_cms/img/icon-up-black.png');?>" alt="Up">
 				</a>
 				<a
 				 class="field-controll js_move_field_down"
 				 href="?moveFieldDown=<?=$field['name'];?>"
-				 title="Move &laquo;<?=$field['title'];?>&raquo; Field Down.">
+				 title="Переместить Поле &laquo;<?=$field['title'];?>&raquo; вниз.">
 					<img src="<?=Utils::getLink('assets/_cms/img/icon-down-black.png');?>" alt="Down">
 				</a>
 				<a
 				 class="field-controll"
 				 href="<?=Utils::getLink('cms/edit-field/?name='.$field['name']);?>"
-				 title="Edit &laquo;<?=$field['title'];?>&raquo; Field.">
+				 title="Редактировать Поле &laquo;<?=$field['title'];?>&raquo;.">
 					<img src="<?=Utils::getLink('assets/_cms/img/icon-edit-black.png');?>" alt="Edit">
 				</a>
 				<a
 				 class="field-controll"
 				 href="<?=Utils::getLink('cms/copy-field/?name='.$field['name']);?>"
-				 title="Copy &laquo;<?=$field['title'];?>&raquo; Field.">
+				 title="Копировать Поле &laquo;<?=$field['title'];?>&raquo;.">
 					<img src="<?=Utils::getLink('assets/_cms/img/icon-copy-black.png');?>" alt="Copy">
 				</a>
 				<a
 				 class="field-controll danger js_delete_field"
 				 href="?delete=<?=$field['name'];?>"
-				 title="Delete &laquo;<?=$field['title'];?>&raquo; Field."
+				 title="Удалить Поле &laquo;<?=$field['title'];?>&raquo;."
 				 data-confirm-title="Do you want to delete &laquo;<?=$field['title'];?>&raquo; Field?">
 					<img src="<?=Utils::getLink('assets/_cms/img/icon-delete-red.png');?>" alt="Delete">
 				</a>
@@ -123,7 +123,7 @@
 				$field['required_str'] = '';
 				if( Utils::pr($field['required']) == 'on' )
 				{
-					$field['required_str'] = '<span title="This is a required Field.">&nbsp;*</span>';
+					$field['required_str'] = '<span title="Это обязательное Поле.">&nbsp;*</span>';
 				}
 
 				echo Utils::render(

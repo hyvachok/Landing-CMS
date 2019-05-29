@@ -9,8 +9,8 @@
 	 name="<?=$vars['name'];?>"
 	 type="text"
 	 value="<?=$vars['output'];?>"
-	 title="Enter a color-code (HEX, RGB, RGBA, HSL, HSLA) for &laquo;<?=$vars['title'];?>&raquo; Field here."
-	 placeholder="Enter a color-code (HEX, RGB, RGBA, HSL, HSLA) here"
+	 title="Введите цветовой код (HEX, RGB, RGBA, HSL, HSLA) для Поля &laquo;<?=$vars['title'];?>&raquo; сюда."
+	 placeholder="Введите цветовой код (HEX, RGB, RGBA, HSL, HSLA) сюда"
 	 onchange="confirmLeave('on');"
 	 />
 	<span
@@ -27,8 +27,8 @@
 	 name="<?=$vars['name'];?>"
 	 type="color"
 	 value="<?=$vars['output'];?>"
-	 title="Click or Tap here to open the color-picker."
-	 placeholder="Enter a color-code (HEX, RGB, RGBA, HSL, HSLA) here"
+	 title="Нажмите сюда, чтобы открыть цветовую пипетку."
+	 placeholder="Введите цветовой код (HEX, RGB, RGBA, HSL, HSLA) here"
 	 />
 </noscript>
 

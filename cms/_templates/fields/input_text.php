@@ -8,8 +8,8 @@
  name="<?=$vars['name'];?>"
  type="text"
  value="<?=$vars['output'];?>"
- title="Enter a text for &laquo;<?=$vars['title'];?>&raquo; Field here."
- placeholder="Enter a text here"
+ title="Введите текст для Поля &laquo;<?=$vars['title'];?>&raquo; сюда."
+ placeholder="Введите текст сюда"
  onchange="confirmLeave('on');"
  />
  

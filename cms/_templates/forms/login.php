@@ -2,7 +2,7 @@
 
 <form method="POST" action="">
 
-	<h2>Login</h2>
+	<h2>Авторизация</h2>
 
 	<div class="form-group">
 		<input
@@ -10,8 +10,8 @@
 		 class="form-control"
 		 name="password"
 		 type="password"
-		 title="Enter the password here."
-		 placeholder="Enter the password here"
+		 title="Введите пароль сюда."
+		 placeholder="Введите пароль сюда"
 		 autofocus
 		 required
 		 />
@@ -20,14 +20,14 @@
 	<div class="buttons">
 		<?php echo Utils::render(
 			'elements/button_blue.php',
-			 array('text' => 'Log in', 'title' => 'Log in and go to the CMS.')
+			 array('text' => 'Войти', 'title' => 'Войти и открыть CMS.')
 		); ?>
 
 		<?php echo Utils::render(
 			'elements/button_white.php',
 			 array(
-			 	'text' => 'Cancel',
-			 	'title' => 'Go to the site.',
+			 	'text' => 'Отмена',
+			 	'title' => 'Открыть сайт.',
 			 	'url' => Utils::getLink()
 			 )
 		); ?>
