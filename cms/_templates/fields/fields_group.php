@@ -54,7 +54,7 @@
 						 class="group-controll danger js_delete_field"
 						 href="?delete=<?=$field['name'];?>"
 						 title="Удалить Группу &laquo;<?=$field['title'];?>&raquo;."
-						 data-confirm-title="Do you want to delete &laquo;<?=$field['title'];?>&raquo; Group?">
+						 data-confirm-title="Вы действительно хотите удалить Группу &laquo;<?=$field['title'];?>&raquo; ?">
 							<img src="<?=Utils::getLink('assets/_cms/img/icon-delete-white.png');?>" alt="Delete">
 						</a>
 					</div>

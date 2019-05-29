@@ -17,7 +17,7 @@
 	 class="input-group-addon"
 	 role="button"
 	 tabindex="0"
-	 title="Click or Tap here to open the color-picker."
+	 title="Нажмите сюда, чтобы открыть цветовую пипетку."
 	 style="background-color: <?=$vars['output'];?>;"></span>
 </div>
 
@@ -28,7 +28,7 @@
 	 type="color"
 	 value="<?=$vars['output'];?>"
 	 title="Нажмите сюда, чтобы открыть цветовую пипетку."
-	 placeholder="Введите цветовой код (HEX, RGB, RGBA, HSL, HSLA) here"
+	 placeholder="Введите цветовой код (HEX, RGB, RGBA, HSL, HSLA)"
 	 />
 </noscript>
 
