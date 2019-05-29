@@ -31,7 +31,7 @@ $upload = array(
 	<link rel="stylesheet" href="assets/vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<script src="assets/_cms/js/main.js"></script>
 	<meta name='copyright' content='Landing CMS'>
-	<meta name="description" content="Free CMS for Landing">
+	<meta name="description" content="Бесплатная CMS для лэндингов">
 	<meta name="keywords" content="CMS, Landing, Free">
 	<meta name="author" content="Ilia Chernykh">
 	<meta name="generator" content="Landing CMS 0.0.6" />
@@ -52,7 +52,7 @@ $upload = array(
 				 title="Open site menu."
 				 data-open-title="Open site menu."
 				 data-close-title="Close site menu.">
-					<span class="sr-only">Toggle navigation</span>
+					<span class="sr-only">Показать кнопки навигации</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -60,20 +60,20 @@ $upload = array(
 				<a
 				 href="cms/"
 				 class="navbar-brand"
-				 title="Go to the main CMS page.">
+				 title="На главную страницу CMS.">
 					Landing CMS
 				</a>
 			</div>
 			<div class="collapse navbar-collapse" id="js_collapse">
 				<ul class="right nav navbar-nav">
 					<li>
-						<a href="cms/" title="Go to the main CMS page.">CMS</a>
+						<a href="cms/" title="На главную страницу CMS.">CMS</a>
 					</li>
 					<li>
-						<a href="./" target="_blank" title="Go to the Landing Page.">Website</a>
+						<a href="./" target="_blank" title="Go to the Landing Page.">На сайт</a>
 					</li>
 					<li>
-						<a href="https://github.com/Elias-Black/Landing-CMS" target="_blank" title="Go to the site about Landing CMS.">About CMS</a>
+						<a href="https://github.com/Elias-Black/Landing-CMS" target="_blank" title="Go to the site about Landing CMS.">О CMS</a>
 					</li>
 					<li>
 						<form
@@ -103,14 +103,14 @@ $upload = array(
 		<div class="row">
 
 			<div class="alert alert-warning" role="alert">
-				<h4 class="alert-heading">Attention!</h4>
-				<p>Permissions on the folders should allow PHP to create, view and edit files inside them.</p>
-				<p>Also, permissions on the files themselves should allow viewing and editing them for PHP.</p>
+				<h4 class="alert-heading">Внимание!</h4>
+				<p>Разрешения на папки должны позволять PHP создавать, просматривать и редактировать файлы внутри папок.</p>
+				<p>Также, разрешения на сами файлы должны позволять просматривать и редактировать их для PHP.</p>
 			</div>
 
-			<h2>Database permissions</h2>
+			<h2>Разрешения для базы данных</h2>
 
-			<p>You need to set 777 permissions for this folder:</p>
+			<p>Для этой папки необходимо установить разрешение 777:</p>
 
 			<?php foreach ($db as $folder): ?>
 
@@ -132,9 +132,9 @@ $upload = array(
 
 			<?php endforeach; ?>
 
-			<h2>Uploads permissions</h2>
+			<h2>Разрешения на загрузку</h2>
 
-			<p>You need to set 777 permissions for this folders:</p>
+			<p>Для этой папки необходимо установить разрешение 777:</p>
 
 			<?php foreach ($upload as $folder): ?>
 

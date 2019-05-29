@@ -5,12 +5,12 @@
 	<h2><?=Utils::pr($vars['page_header']);?></h2>
 
 	<div class="form-group<?=Utils::pr($vars['invalid_fields']['parent']) ? ' has-error' : '';?>">
-		<label for="parent">Parent<span title="This is a required field.">&nbsp;*</span></label>
+		<label for="parent">Родитель<span title="Это обязательное поле.">&nbsp;*</span></label>
 		<select
 		 id="parent"
 		 class="form-control"
 		 name="parent"
-		 title="Select a Parent for the Field."
+		 title="Выберите Родителя для этого Поля."
 		 onchange="confirmLeave('on');">
 			<?php
 
@@ -37,16 +37,16 @@
 			<?php endforeach; ?>
 		</select>
 
-		<div class="help-block">Select a Parent of the new Field.</div>
+		<div class="help-block">Выберите Родителя для нового Поля.</div>
 	</div>
 
 	<div class="form-group<?=Utils::pr($vars['invalid_fields']['type']) ? ' has-error' : '';?>">
-		<label for="type">Type<span title="This is a required field.">&nbsp;*</span></label>
+		<label for="type">Тип<span title="Это обязательное поле.">&nbsp;*</span></label>
 		<select
 		 id="type"
 		 class="form-control"
 		 name="type"
-		 title="Select a Type of the Field."
+		 title="Выберите Тип этого поля."
 		 onchange="confirmLeave('on');"
 		 required>
 			<?php foreach(Content::getFieldsTypes() as $field_name => $field_value): ?>
@@ -67,54 +67,54 @@
 			<?php endforeach; ?>
 		</select>
 
-		<div class="help-block">Select a Type of the new Field.</div>
+		<div class="help-block">Выберите Тип нового поля.</div>
 	</div>
 
 	<div class="form-group<?=Utils::pr($vars['invalid_fields']['alias']) ? ' has-error' : '';?>">
-		<label for="alias">Alias<span title="This is a required field.">&nbsp;*</span></label>
+		<label for="alias">Псевдоним<span title="Это обязательное поле.">&nbsp;*</span></label>
 		<input
 		 id="alias"
 		 class="form-control"
 		 name="alias"
 		 type="text"
 		 value="<?=Utils::pr($vars['sent_data']['alias']);?>"
-		 title="Enter an Alias for the Field here."
-		 placeholder="Enter an Alias here"
+		 title="Введите Псевдоним для этого Поля."
+		 placeholder="Введите Псевдоним сюда"
 		 onchange="confirmLeave('on');"
 		 required
 		 />
-		<div class="help-block">It is necessary for calling the new Field in the backend.</div>
+		<div class="help-block">Это необходимо для вызова нового поля во внутреннем интерфейсе программы.</div>
 	</div>
 
 	<div class="form-group<?=Utils::pr($vars['invalid_fields']['title']) ? ' has-error' : '';?>">
-		<label for="title">Title<span title="This is a required field.">&nbsp;*</span></label>
+		<label for="title">Заголовок<span title="Это обязательное поле.">&nbsp;*</span></label>
 		<input
 		 id="title"
 		 class="form-control"
 		 name="title"
 		 type="text"
 		 value="<?=Utils::pr($vars['sent_data']['title']);?>"
-		 title="Enter a Title for the Field here."
-		 placeholder="Enter a Title here"
+		 title="Введите Заголовок для этого Поля."
+		 placeholder="Введите заголовок сюда"
 		 onchange="confirmLeave('on');"
 		 required
 		 />
-		<div class="help-block">The name of the new Field in Admin panel.</div>
+		<div class="help-block">Название нового Поля на панели администратора.</div>
 	</div>
 
 	<div class="form-group<?=Utils::pr($vars['invalid_fields']['description']) ? ' has-error' : '';?>">
-		<label for="description">Description</label>
+		<label for="description">Описание</label>
 		<input
 		 id="description"
 		 class="form-control"
 		 name="description"
 		 type="text"
 		 value="<?=Utils::pr($vars['sent_data']['description']);?>"
-		 title="Enter a Description for the Field here."
-		 placeholder="Enter a Description here"
+		 title="Введите описание для этого поля."
+		 placeholder="Введите описание сюда"
 		 onchange="confirmLeave('on');"
 		 />
-		<div class="help-block">The description of the new Field in admin panel.</div>
+		<div class="help-block">Описание нового Поля на панели администратора.</div>
 	</div>
 
 	<div class="form-group<?=Utils::pr($vars['invalid_fields']['required']) ? ' has-error' : '';?>">
@@ -129,32 +129,32 @@
 		 class="magic-checkbox"
 		 name="required"
 		 type="checkbox"
-		 title="Check this box if the Field is required for filling."
+		 title="Установите этот флажок, если поле необходимо для заполнения.."
 		 onchange="confirmLeave('on');"
 		 <?=Utils::pr($vars['sent_data']['required']) == 'on' ? 'checked' : '';?>
 		 />
 
 		<label
 		 for="required"
-		 title="Check this box if the Field is required for filling."
+		 title="Установите этот флажок, если поле необходимо для заполнения.."
 		>
-			Required Field<span title="This is a required field.">&nbsp;*</span>
+			Обязательное поле<span title="Это обязательное поле.">&nbsp;*</span>
 		</label>
-		<p class="help-block">Does not work for Fields Groups.</p>
+		<p class="help-block">Не работает для Групповых Полей.</p>
 	</div>
 
 	<div class="buttons">
 		<?php echo Utils::render(
 			'elements/button_blue.php',
 			 array(
-			 	'text' => 'Save',
+			 	'text' => 'Сохранить',
 			 	'title' => Utils::pr($vars['save_btn_text'])
 			 )
 		); ?>
 		<?php echo Utils::render(
 			'elements/button_white.php',
 			 array(
-			 	'text' => 'Cancel',
+			 	'text' => 'Отмена',
 			 	'title' => Utils::pr($vars['cancel_btn_text']),
 			 	'url' => Utils::getLink('cms/')
 			 )

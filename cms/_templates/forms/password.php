@@ -2,50 +2,50 @@
 
 <form method="POST" action="">
 
-	<h2>Password</h2>
+	<h2>Пароль</h2>
 
 	<div class="form-group">
-		<label for="pwd1">New password</label>
+		<label for="pwd1">Новый пароль</label>
 		<input
 		 id="pwd1"
 		 class="form-control"
 		 name="pwd1"
 		 type="password"
-		 title="Enter new password here."
-		 placeholder="New password"
+		 title="Введите новый пароль."
+		 placeholder="Новый пароль"
 		 value="<?=Utils::pr($vars['sent_data']['pwd1']);?>"
 		 autofocus
 		 required
 		 />
-		<div class="help-block">Please enter a new password here.</div>
+		<div class="help-block">Пожалуйста введите новый пароль сюда.</div>
 	</div>
 
 	<div class="form-group">
-		<label for="pwd2">Confirm new password</label>
+		<label for="pwd2">Подтвердите новый пароль</label>
 		<input
 		 id="pwd2"
 		 class="form-control"
 		 name="pwd2"
 		 type="password"
-		 title="Enter new password here again."
-		 placeholder="New password again"
+		 title="Введите новый пароль сюда."
+		 placeholder="Новый пароль ещё раз"
 		 value="<?=Utils::pr($vars['sent_data']['pwd2']);?>"
 		 required
 		 />
-		<div class="help-block">Please enter the new password again here.</div>
+		<div class="help-block">Пожалуйста введите новый пароль сюда ещё раз.</div>
 	</div>
 
 	<div class="buttons">
 		<?php echo Utils::render(
 			'elements/button_blue.php',
-			 array('text' => 'Save', 'title' => 'Save new password.')
+			 array('text' => 'Сохранить', 'title' => 'Сохранить новый пароль.')
 		); ?>
 
 		<?php echo Utils::render(
 			'elements/button_white.php',
 			 array(
-			 	'text' => 'Cancel',
-			 	'title' => 'Cancel password changing.',
+			 	'text' => 'Отмена',
+			 	'title' => 'Отменить изменение пароль.',
 			 	'url' => Utils::getLink('cms/')
 			 )
 		); ?>

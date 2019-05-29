@@ -7,13 +7,13 @@
 
 	<div id="js_empty_main_form" class="<?=empty($vars['fields']) ? '' : 'hidden';?>">
 
-		<div class="alert alert-info">No Fields.</div>
+		<div class="alert alert-info">Нет Полей.</div>
 		<div class="buttons">
 			<?php echo Utils::render(
 				'elements/button_green.php',
 				 array(
-				 	'text' => 'Add Field',
-				 	'title' => 'Go to adding a new Field.',
+				 	'text' => 'Добавить Поле',
+				 	'title' => 'Открыть добавление нового Поля.',
 				 	'url' => Utils::getLink('cms/add-field/')
 				 )
 			); ?>
@@ -26,13 +26,13 @@
 		<div class="buttons">
 			<?php echo Utils::render(
 				'elements/button_blue.php',
-				 array('text' => 'Save', 'title' => 'Save all Fields.')
+				 array('text' => 'Сохранить', 'title' => 'Сохранить все поля.')
 			); ?>
 			<?php echo Utils::render(
 				'elements/button_green.php',
 				 array(
-				 	'text' => 'Add Field',
-				 	'title' => 'Go to adding a new Field.',
+				 	'text' => 'Добавить Поле',
+				 	'title' => 'Открыть добавление нового Поля.',
 				 	'url' => Utils::getLink('cms/add-field/')
 				 )
 			); ?>
@@ -46,13 +46,13 @@
 		<div class="buttons">
 			<?php echo Utils::render(
 				'elements/button_blue.php',
-				 array('text' => 'Save', 'title' => 'Save all Fields.')
+				 array('text' => 'Сохранить', 'title' => 'Сохранить все поля.')
 			); ?>
 			<?php echo Utils::render(
 				'elements/button_green.php',
 				 array(
-				 	'text' => 'Add Field',
-				 	'title' => 'Go to adding a new Field.',
+				 	'text' => 'Добавить Поле',
+				 	'title' => 'Открыть добавление нового Поля.',
 				 	'url' => Utils::getLink('cms/add-field/')
 				 )
 			); ?>
@@ -62,6 +62,6 @@
 
 </form>
 
-<a href="#" class="scroll-to-top" title="Scroll to Top.">
-	<img src="<?=Utils::getLink('assets/_cms/img/icon-up-black.png');?>" alt="Scroll to Top">
+<a href="#" class="scroll-to-top" title="Перемотать наверх.">
+	<img src="<?=Utils::getLink('assets/_cms/img/icon-up-black.png');?>" alt="Перемотать наверх">
 </a>

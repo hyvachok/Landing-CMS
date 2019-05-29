@@ -39,6 +39,6 @@
  class="form-control js_wysiwyg_<?=$vars['name'];?>"
  name="<?=$vars['name'];?>"
  rows="7"
- title="Enter a text for &laquo;<?=$vars['title'];?>&raquo; Field here."
- placeholder="Enter a text here"><?=$vars['output'];?></textarea>
+ title="Введите текст для Поля &laquo;<?=$vars['title'];?>&raquo; сюда."
+ placeholder="Введите текст сюда"><?=$vars['output'];?></textarea>
  

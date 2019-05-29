@@ -85,9 +85,9 @@ require_once('modules/rand_num.php');
 				<?php if( isset($get['title']) ): ?>
 					<?=$get['title'];?>
 				<?php else: ?>
-					Create <i>String</i> Field with 'title' Alias.
+					Создайте <i>Строковое</i> Поле с помощью Псевдонима 'title'.
 				<?php endif; ?>
-				<p><a href="/cms" target="_blank" title="Go to the Admin area." class="link">Go to CMS</a></p>
+				<p><a href="/cms" target="_blank" title="Go to the Admin area." class="link">Открыть CMS</a></p>
 				<p><a href="https://github.com/Elias-Black/Landing-CMS" target="_blank" title="Go to the site about Landing CMS." class="link unline">Landing CMS v0.0.6</a></p>
 			</div>
 		</div>
@@ -97,13 +97,13 @@ require_once('modules/rand_num.php');
 				<?php if( isset($get['main']) ): ?>
 					<?=$get['main'];?>
 				<?php else: ?>
-					Create <i>Multiline/WYSIWYG</i> Field with 'main' Alias.
+				Создайте <i>Многострочные/WYSIWYG</i> Поля с помощью Псевдонима 'main'.
 				<?php endif; ?>
 
 				<p>
 					<?php if( isset($get['main_group']) && is_array($get['main_group']) ): ?>
 						<p>
-							<b>Items:</b>
+							<b>Элементы:</b>
 						</p>
 						<ul>
 							<?php foreach($get['main_group'] as $name => $item): ?>
@@ -111,11 +111,11 @@ require_once('modules/rand_num.php');
 							<?php endforeach; ?>
 						</ul>
 					<?php else: ?>
-						Create <i>Group of Fields</i> with 'main_group' Alias and some <i>String</i> items.
+					Создайте <i>Группы Полей</i> с помощью Псевдонима 'main_group' и несколькими <i>Строковыми</i> элементами.
 					<?php endif; ?>
 				</p>
 
-				<p>Random module: <?=$rand_num;?></p>
+				<p>Модуль случайных чисел: <?=$rand_num;?></p>
 
 			</div>
 		</div>
@@ -124,7 +124,7 @@ require_once('modules/rand_num.php');
 				<?php if( isset($get['footer']) ): ?>
 					<?=$get['footer'];?>
 				<?php else: ?>
-					Create <i>String</i> Field with 'footer' Alias.
+				Создайте <i>Строковое</i> Поле с помощью Псевдонима 'footer'.
 				<?php endif; ?>
 			</div>
 		</div>
